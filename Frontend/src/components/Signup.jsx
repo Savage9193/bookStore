@@ -22,7 +22,8 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://book-store-1-seven.vercel.app//user/signup", userInfo)
+      // .post("http://localhost:4001/user/signup", userInfo)
+      .post("https://book-store-backend-coral.vercel.app/ser/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
