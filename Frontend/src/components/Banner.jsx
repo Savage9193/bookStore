@@ -15,7 +15,7 @@ function Banner() {
             Books, stories, and knowledge for all. Explore a wide range of genres. Find your next great read and dive into captivating tales.
             Discover the joy of reading, with selections for every taste and adventure!
             </p>
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input dark:bg-slate-800 dark:text-white input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
