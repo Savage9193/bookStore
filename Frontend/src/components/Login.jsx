@@ -64,7 +64,7 @@ function Login() {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="w-80 px-3 py-1 border rounded-md outline-none"
+                                className="dark:bg-slate-800 dark:text-white w-80 px-3 py-1 border rounded-md outline-none"
                                 {...register("email", { required: true })}
                             />
                             <br />
@@ -81,7 +81,7 @@ function Login() {
                             <input
                                 type="password"
                                 placeholder="Enter your password"
-                                className="w-80 px-3 py-1 border rounded-md outline-none"
+                                className="dark:bg-slate-800 dark:text-white w-80 px-3 py-1 border rounded-md outline-none"
                                 {...register("password", { required: true })}
                             />
                             <br />
