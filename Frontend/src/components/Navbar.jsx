@@ -3,7 +3,6 @@ import Login from './Login';
 import { useAuth } from '../context/AuthProvider';
 import Logout from './Logout';
 import { Link } from 'react-router-dom';
-import Course from './Course';
 
 function Navbar() {
     const [authUser,setAuthUser]=useAuth();
@@ -48,10 +47,10 @@ function Navbar() {
                 <div className="navbar">
                     <div className="navbar-start">
                         <div className="dropdown">
-                            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden"> <span className="drop">▼</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="h-5 w-5"
+                                    className="h-5 w-5 "
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="">
@@ -61,10 +60,12 @@ function Navbar() {
                                         strokeWidth="2"
                                         d="M4 6h16M4 12h8m-8 6h16" />
                                 </svg>
+                                
                             </div>
-                            <ul
+                            
+                            <ul 
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                className=" menu bg-base-100 menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
                                 {navItems}
                             </ul>
                         </div>
