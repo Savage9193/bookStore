@@ -30,7 +30,7 @@ function Navbar() {
                 <a href='/'>Home</a>
             </li>
             <li>
-                <Link to='/course'>Course</Link>
+                <Link href='/course'>Course</Link>
             </li>
             <li>
                 <a>Contact</a>

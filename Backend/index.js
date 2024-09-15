@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors"
 import bookRoute from "./route/book.route.js"
 import userRoute from "./route/user.route.js"
-import courseRoute from "./route/course.route.js";
+
 
 
 const app = express();
