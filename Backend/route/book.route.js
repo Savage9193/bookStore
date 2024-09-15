@@ -4,7 +4,7 @@ import { getBook } from "../controller/book.controller.js";
 import { get } from "mongoose";
 
 const router=express.Router();
-router.get("/",getBook);
+router.get("/book",getBook);
 
 
 export default router;
