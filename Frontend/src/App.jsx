@@ -8,12 +8,7 @@ import { useAuth } from './context/AuthProvider';
 import { Navigate } from 'react-router-dom';
 import Abouts from './abouts/Abouts';
 import Contacts from './contacts/Contacts';
-import CartPages from './cartpages/CartPages';
-
-
-
-
-
+import CartPage from './components/CartPage';
 
 
 
@@ -39,7 +34,7 @@ function App() {
           />
           <Route
             path="/cart"
-            element={authUser ? <CartPages/> : <Navigate to="/signup" />}
+            element={authUser ? <CartPage/> : <Navigate to="/signup" />}
           />
           <Route path="/signup" element={<Signup />} />
          
