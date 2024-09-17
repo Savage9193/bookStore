@@ -1,12 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
+    {
+      "src": "package.json",  
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"   
+      }
+    }
   ],
   "routes": [
-    { "src": "/course", "dest": "/course.js" },
-    { "src": "/cart", "dest": "/CartPage.jsx" },
-  
-    { "src": "/(.*)", "dest": "index.js" }
+    {
+      "src": "/(.*)",        
+      "dest": "/index.html"  
+    }
   ]
 }
