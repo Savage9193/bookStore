@@ -28,9 +28,17 @@ function Signup() {
         console.log(res.data);
         if (res.data) {
           toast.success("Signup Successfully");
-          navigate(from, { replace: true });
+          localStorage.setItem("Users", JSON.stringify(res.data.user));
+          navigate("/", { replace: true }); 
+          setTimeout(() => {
+            window.location.reload();
+            setTimeout(() => {
+                        window.location.reload();
+                        localStorage.setItem("Users", JSON.stringify(res.data.user));
+                    }, 100);
+        }, 1000);
         }
-        localStorage.setItem("Users", JSON.stringify(res.data.user));
+        // localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
@@ -113,11 +121,8 @@ function Signup() {
                   Have account?{" "}
                   <button
                     className="state={{ from: location.pathname }} underline text-blue-500 cursor-pointer"
-                    onClick={() =>
-                      document.getElementById("my_modal_3").showModal()
-                    }
                   >
-                    Login
+                    <Link to="/">Login</Link>
                   </button>{" "}
                   <Login />
                 </div>

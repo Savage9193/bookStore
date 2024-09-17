@@ -3,6 +3,7 @@ import Login from './Login';
 import { useAuth } from '../context/AuthProvider';
 import Logout from './Logout';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
     const [authUser, setAuthUser] = useAuth();
@@ -52,6 +53,9 @@ function Navbar() {
             </li>
             <li>
                 <Link className='dark:bg-slate-800 dark:text-white' to="/about">About</Link>
+            </li>
+            <li>
+                <Link className='dark:bg-slate-800 dark:text-white ' to="/cart"><FaShoppingCart size={20} /></Link>
             </li>
         </>
     );

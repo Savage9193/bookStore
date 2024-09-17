@@ -31,14 +31,14 @@ function Login() {
                     setTimeout(() => {
                         window.location.reload();
                         localStorage.setItem("Users", JSON.stringify(res.data.user));
-                    }, 1000);
+                    }, 100);
                 }
             })
             .catch((err) => {
                 if (err.response) {
                     console.log(err);
                     toast.error("Error: " + err.response.data.message);
-                    setTimeout(() => { }, 1000);
+                    setTimeout(() => { }, 100);
                 }
             });
     };
@@ -95,7 +95,7 @@ function Login() {
                                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                                     Login
                                 </button>
-                                <p>
+                                <div>
                                     Not registered?{" "}
                                     <Link
                                         to="/signup"
@@ -103,7 +103,7 @@ function Login() {
                                     >
                                         Signup
                                     </Link>{" "}
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -114,3 +114,4 @@ function Login() {
 }
 
 export default Login;
+
