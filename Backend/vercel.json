@@ -5,7 +5,7 @@
   ],
   "routes": [
     { "src": "/course", "dest": "/course.js" },
-    { "src": "/cart", "dest": "/cartpage.js" },
+    { "src": "/cart", "dest": "/CartPage.jsx" },
   
     { "src": "/(.*)", "dest": "index.js" }
   ]
