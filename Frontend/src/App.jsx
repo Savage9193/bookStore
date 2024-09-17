@@ -8,7 +8,8 @@ import { useAuth } from './context/AuthProvider';
 import { Navigate } from 'react-router-dom';
 import Abouts from './abouts/Abouts';
 import Contacts from './contacts/Contacts';
-import CartPage from './components/cartPage';
+import CartPage from './components/CartPage';
+
 
 
 
