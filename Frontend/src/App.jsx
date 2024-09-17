@@ -14,6 +14,7 @@ import CartPage from './components/cartPage';
 
 
 
+
 function App() {
   const [authUser,setAuthUser]=useAuth();
     console.log(authUser)
