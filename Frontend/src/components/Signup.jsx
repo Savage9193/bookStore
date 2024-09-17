@@ -44,7 +44,7 @@ function Signup() {
       <div className=" flex h-screen items-center justify-center">
         <div className=" w-[600px] ">
           <div className="modal-box dark:bg-slate-800 dark:text-white">
-            <form className=" onSubmit={handleSubmit(onSubmit)}" method="dialog">
+            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
@@ -109,7 +109,7 @@ function Signup() {
                 <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                   Signup
                 </button>
-                <p className="text-xl">
+                <div className="text-xl">
                   Have account?{" "}
                   <button
                     className="state={{ from: location.pathname }} underline text-blue-500 cursor-pointer"
@@ -120,7 +120,7 @@ function Signup() {
                     Login
                   </button>{" "}
                   <Login />
-                </p>
+                </div>
               </div>
             </form>
           </div>
